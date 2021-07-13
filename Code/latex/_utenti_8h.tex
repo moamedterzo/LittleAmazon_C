@@ -1,0 +1,302 @@
+\hypertarget{_utenti_8h}{}\section{Riferimenti per il file src/\+Utenti.h}
+\label{_utenti_8h}\index{src/\+Utenti.\+h@{src/\+Utenti.\+h}}
+{\ttfamily \#include \char`\"{}Utility.\+h\char`\"{}}\newline
+\subsection*{Strutture dati}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_utente_similarita}{Utente\+Similarita}
+\item 
+struct \hyperlink{struct_prodotto_stima}{Prodotto\+Stima}
+\end{DoxyCompactItemize}
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_utenti_8h_a67e3c6584d8ab66cdce069d0392d73b1}{F\+I\+L\+E\+\_\+\+U\+T\+E\+N\+TI}~\char`\"{}Utenti.\+txt\char`\"{}
+\item 
+\#define \hyperlink{_utenti_8h_afd43173592d1ea0698962c1f427136ee}{U\+T\+E\+N\+T\+I\+\_\+\+S\+I\+M\+I\+L\+I\+\_\+\+D\+A\+\_\+\+C\+O\+N\+S\+I\+D\+E\+R\+A\+RE}~5
+\item 
+\#define \hyperlink{_utenti_8h_af91e89bfe7d6cae0f596944877890d7b}{P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+D\+A\+\_\+\+R\+A\+C\+C\+O\+M\+A\+N\+D\+A\+RE}~4
+\item 
+\#define \hyperlink{_utenti_8h_a5220a84a50e74c58eae9c10ee9e2b291}{P\+R\+E\+F\+E\+R\+E\+N\+Z\+E\+\_\+\+U\+T\+E\+N\+TE}~200
+\item 
+\#define \hyperlink{_utenti_8h_ab50c4ec57781c0ec803530793c7ba0e4}{S\+T\+I\+M\+A\+\_\+\+V\+I\+S\+U\+A\+L\+I\+Z\+Z\+A\+TO}~0.\+5
+\item 
+\#define \hyperlink{_utenti_8h_aad1d70118e98c431bdd1216db4f1b479}{S\+T\+I\+M\+A\+\_\+\+L\+I\+S\+T\+A\+\_\+\+D\+E\+S\+I\+D\+E\+RI}~1
+\item 
+\#define \hyperlink{_utenti_8h_a969525819a2661ccf089008473a28650}{S\+T\+I\+M\+A\+\_\+\+A\+C\+Q\+U\+I\+S\+T\+A\+TO}~1.\+5
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_utenti_8h_a0a504725211eb5133d2768d2993adff2}{Utente\+Ricerca} ()
+\item 
+void \hyperlink{_utenti_8h_a53bae75046b6859f275c432c56fbd1cb}{Utente\+Inserimento} ()
+\item 
+void \hyperlink{_utenti_8h_a7d5c60754a997b8e9c99e6ee9d99ead4}{Utente\+Visualizza} ()
+\item 
+void \hyperlink{_utenti_8h_a2cc61e10dc8b1d3fdd514fefb3f2e275}{Utente\+Visualizza\+Intro} (\hyperlink{struct_utente}{Utente} utente)
+\item 
+void \hyperlink{_utenti_8h_a5759f53311f5fcffad716b1bff0baa7d}{Utente\+Visualizza\+Preferenze} (int I\+D\+Utente)
+\item 
+void \hyperlink{_utenti_8h_a5d238784027260cb3e899c79892111c3}{Utente\+Modifica} (\hyperlink{struct_utente}{Utente} $\ast$utente, int index)
+\item 
+void \hyperlink{_utenti_8h_ad231b8401782f333d57c2397e0090f2d}{Utente\+Elimina} (int index, \hyperlink{struct_utente}{Utente} utente)
+\item 
+void \hyperlink{_utenti_8h_aac778e954e8abe06b8e7fbb314c5fabe}{Utente\+Elenco\+Acquisti} ()
+\item 
+void \hyperlink{_utenti_8h_a9df046469041548396f5e1644411ab23}{Utente\+Elenco\+Nuovi} ()
+\item 
+void \hyperlink{_utenti_8h_a497c2d9a68e29485db20eff4fe2b3359}{Show\+Utente\+For\+Elenco} (\hyperlink{struct_utente}{Utente} utente)
+\item 
+bool \hyperlink{_utenti_8h_adaf52228f986945a1f51e7ef59616873}{Exists\+One\+Utente} ()
+\item 
+int \hyperlink{_utenti_8h_aa5af5a35dc1b33a9a23fa1238fdcb87c}{Get\+Index\+Utente\+From\+Array\+By\+ID} (int ID)
+\item 
+void \hyperlink{_utenti_8h_a48186cfd5eef09e2a880f84917c21d92}{Get\+Prodotti\+Raccomandati} (int I\+D\+Utente)
+\item 
+void \hyperlink{_utenti_8h_a20c96a5e491025d6cc504f108d7f0ffb}{Get\+Utente\+Similarita} (\hyperlink{struct_preferenza}{Preferenza} preferenze\+Utente\+Principale\mbox{[}$\,$\mbox{]}, int n\+Pref\+Utente\+Principale, \hyperlink{struct_utente_similarita}{Utente\+Similarita} $\ast$utente2)
+\item 
+int \hyperlink{_utenti_8h_aedd7fce7a715da966d911005d70ed21d}{Get\+Elenco\+Preferenze\+Utente} (int I\+D\+Utente, \hyperlink{struct_preferenza}{Preferenza} preferenze\mbox{[}$\,$\mbox{]})
+\item 
+void \hyperlink{_utenti_8h_aa640532285ed708a5c62ce0c00c76c93}{Eliminazione\+Preferenze\+Utente} (int I\+D\+Utente)
+\end{DoxyCompactItemize}
+\subsection*{Variabili}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_utenti_8h_a8415943f1e30d1dd5d04cf27b405c02e}{Last\+I\+D\+Utente}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Questa libreria definisce varie funzioni che lavorano sulla tipologia di dato \textquotesingle{}\hyperlink{struct_utente}{Utente}\textquotesingle{} Sono presenti algoritmi di ricerca, di modifica dei dati e di output dei valori. Inoltre e\textquotesingle{} presente l\textquotesingle{}algoritmo che calcola i prodotti raccomandati di un utente.
+
+\begin{DoxyAuthor}{Autori}
+Amedeo Racanati 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle definizioni}
+\mbox{\Hypertarget{_utenti_8h_a67e3c6584d8ab66cdce069d0392d73b1}\label{_utenti_8h_a67e3c6584d8ab66cdce069d0392d73b1}} 
+\index{Utenti.\+h@{Utenti.\+h}!F\+I\+L\+E\+\_\+\+U\+T\+E\+N\+TI@{F\+I\+L\+E\+\_\+\+U\+T\+E\+N\+TI}}
+\index{F\+I\+L\+E\+\_\+\+U\+T\+E\+N\+TI@{F\+I\+L\+E\+\_\+\+U\+T\+E\+N\+TI}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{F\+I\+L\+E\+\_\+\+U\+T\+E\+N\+TI}{FILE\_UTENTI}}
+{\footnotesize\ttfamily \#define F\+I\+L\+E\+\_\+\+U\+T\+E\+N\+TI~\char`\"{}Utenti.\+txt\char`\"{}}
+
+Nome del file contenente i dati degli utenti \mbox{\Hypertarget{_utenti_8h_a5220a84a50e74c58eae9c10ee9e2b291}\label{_utenti_8h_a5220a84a50e74c58eae9c10ee9e2b291}} 
+\index{Utenti.\+h@{Utenti.\+h}!P\+R\+E\+F\+E\+R\+E\+N\+Z\+E\+\_\+\+U\+T\+E\+N\+TE@{P\+R\+E\+F\+E\+R\+E\+N\+Z\+E\+\_\+\+U\+T\+E\+N\+TE}}
+\index{P\+R\+E\+F\+E\+R\+E\+N\+Z\+E\+\_\+\+U\+T\+E\+N\+TE@{P\+R\+E\+F\+E\+R\+E\+N\+Z\+E\+\_\+\+U\+T\+E\+N\+TE}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{P\+R\+E\+F\+E\+R\+E\+N\+Z\+E\+\_\+\+U\+T\+E\+N\+TE}{PREFERENZE\_UTENTE}}
+{\footnotesize\ttfamily \#define P\+R\+E\+F\+E\+R\+E\+N\+Z\+E\+\_\+\+U\+T\+E\+N\+TE~200}
+
+Numero che indica una media delle preferenze che un utente puo\textquotesingle{} avere \mbox{\Hypertarget{_utenti_8h_af91e89bfe7d6cae0f596944877890d7b}\label{_utenti_8h_af91e89bfe7d6cae0f596944877890d7b}} 
+\index{Utenti.\+h@{Utenti.\+h}!P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+D\+A\+\_\+\+R\+A\+C\+C\+O\+M\+A\+N\+D\+A\+RE@{P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+D\+A\+\_\+\+R\+A\+C\+C\+O\+M\+A\+N\+D\+A\+RE}}
+\index{P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+D\+A\+\_\+\+R\+A\+C\+C\+O\+M\+A\+N\+D\+A\+RE@{P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+D\+A\+\_\+\+R\+A\+C\+C\+O\+M\+A\+N\+D\+A\+RE}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+D\+A\+\_\+\+R\+A\+C\+C\+O\+M\+A\+N\+D\+A\+RE}{PRODOTTI\_DA\_RACCOMANDARE}}
+{\footnotesize\ttfamily \#define P\+R\+O\+D\+O\+T\+T\+I\+\_\+\+D\+A\+\_\+\+R\+A\+C\+C\+O\+M\+A\+N\+D\+A\+RE~4}
+
+Numero dei prodotti da raccomandare \mbox{\Hypertarget{_utenti_8h_a969525819a2661ccf089008473a28650}\label{_utenti_8h_a969525819a2661ccf089008473a28650}} 
+\index{Utenti.\+h@{Utenti.\+h}!S\+T\+I\+M\+A\+\_\+\+A\+C\+Q\+U\+I\+S\+T\+A\+TO@{S\+T\+I\+M\+A\+\_\+\+A\+C\+Q\+U\+I\+S\+T\+A\+TO}}
+\index{S\+T\+I\+M\+A\+\_\+\+A\+C\+Q\+U\+I\+S\+T\+A\+TO@{S\+T\+I\+M\+A\+\_\+\+A\+C\+Q\+U\+I\+S\+T\+A\+TO}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+I\+M\+A\+\_\+\+A\+C\+Q\+U\+I\+S\+T\+A\+TO}{STIMA\_ACQUISTATO}}
+{\footnotesize\ttfamily \#define S\+T\+I\+M\+A\+\_\+\+A\+C\+Q\+U\+I\+S\+T\+A\+TO~1.\+5}
+
+Valore di stima di un prodotto da raccomandare se acquistato da utenti affini \mbox{\Hypertarget{_utenti_8h_aad1d70118e98c431bdd1216db4f1b479}\label{_utenti_8h_aad1d70118e98c431bdd1216db4f1b479}} 
+\index{Utenti.\+h@{Utenti.\+h}!S\+T\+I\+M\+A\+\_\+\+L\+I\+S\+T\+A\+\_\+\+D\+E\+S\+I\+D\+E\+RI@{S\+T\+I\+M\+A\+\_\+\+L\+I\+S\+T\+A\+\_\+\+D\+E\+S\+I\+D\+E\+RI}}
+\index{S\+T\+I\+M\+A\+\_\+\+L\+I\+S\+T\+A\+\_\+\+D\+E\+S\+I\+D\+E\+RI@{S\+T\+I\+M\+A\+\_\+\+L\+I\+S\+T\+A\+\_\+\+D\+E\+S\+I\+D\+E\+RI}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+I\+M\+A\+\_\+\+L\+I\+S\+T\+A\+\_\+\+D\+E\+S\+I\+D\+E\+RI}{STIMA\_LISTA\_DESIDERI}}
+{\footnotesize\ttfamily \#define S\+T\+I\+M\+A\+\_\+\+L\+I\+S\+T\+A\+\_\+\+D\+E\+S\+I\+D\+E\+RI~1}
+
+Valore di stima di un prodotto da raccomandare se aggiunto alla lista desideri da utenti affini \mbox{\Hypertarget{_utenti_8h_ab50c4ec57781c0ec803530793c7ba0e4}\label{_utenti_8h_ab50c4ec57781c0ec803530793c7ba0e4}} 
+\index{Utenti.\+h@{Utenti.\+h}!S\+T\+I\+M\+A\+\_\+\+V\+I\+S\+U\+A\+L\+I\+Z\+Z\+A\+TO@{S\+T\+I\+M\+A\+\_\+\+V\+I\+S\+U\+A\+L\+I\+Z\+Z\+A\+TO}}
+\index{S\+T\+I\+M\+A\+\_\+\+V\+I\+S\+U\+A\+L\+I\+Z\+Z\+A\+TO@{S\+T\+I\+M\+A\+\_\+\+V\+I\+S\+U\+A\+L\+I\+Z\+Z\+A\+TO}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{S\+T\+I\+M\+A\+\_\+\+V\+I\+S\+U\+A\+L\+I\+Z\+Z\+A\+TO}{STIMA\_VISUALIZZATO}}
+{\footnotesize\ttfamily \#define S\+T\+I\+M\+A\+\_\+\+V\+I\+S\+U\+A\+L\+I\+Z\+Z\+A\+TO~0.\+5}
+
+Valore di stima di un prodotto da raccomandare se visualizzato da utenti affini \mbox{\Hypertarget{_utenti_8h_afd43173592d1ea0698962c1f427136ee}\label{_utenti_8h_afd43173592d1ea0698962c1f427136ee}} 
+\index{Utenti.\+h@{Utenti.\+h}!U\+T\+E\+N\+T\+I\+\_\+\+S\+I\+M\+I\+L\+I\+\_\+\+D\+A\+\_\+\+C\+O\+N\+S\+I\+D\+E\+R\+A\+RE@{U\+T\+E\+N\+T\+I\+\_\+\+S\+I\+M\+I\+L\+I\+\_\+\+D\+A\+\_\+\+C\+O\+N\+S\+I\+D\+E\+R\+A\+RE}}
+\index{U\+T\+E\+N\+T\+I\+\_\+\+S\+I\+M\+I\+L\+I\+\_\+\+D\+A\+\_\+\+C\+O\+N\+S\+I\+D\+E\+R\+A\+RE@{U\+T\+E\+N\+T\+I\+\_\+\+S\+I\+M\+I\+L\+I\+\_\+\+D\+A\+\_\+\+C\+O\+N\+S\+I\+D\+E\+R\+A\+RE}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{U\+T\+E\+N\+T\+I\+\_\+\+S\+I\+M\+I\+L\+I\+\_\+\+D\+A\+\_\+\+C\+O\+N\+S\+I\+D\+E\+R\+A\+RE}{UTENTI\_SIMILI\_DA\_CONSIDERARE}}
+{\footnotesize\ttfamily \#define U\+T\+E\+N\+T\+I\+\_\+\+S\+I\+M\+I\+L\+I\+\_\+\+D\+A\+\_\+\+C\+O\+N\+S\+I\+D\+E\+R\+A\+RE~5}
+
+Numero che indica quanti utenti simili vengono considerati per la ricerca dei prodotti raccomandati 
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_utenti_8h_aa640532285ed708a5c62ce0c00c76c93}\label{_utenti_8h_aa640532285ed708a5c62ce0c00c76c93}} 
+\index{Utenti.\+h@{Utenti.\+h}!Eliminazione\+Preferenze\+Utente@{Eliminazione\+Preferenze\+Utente}}
+\index{Eliminazione\+Preferenze\+Utente@{Eliminazione\+Preferenze\+Utente}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Eliminazione\+Preferenze\+Utente()}{EliminazionePreferenzeUtente()}}
+{\footnotesize\ttfamily void Eliminazione\+Preferenze\+Utente (\begin{DoxyParamCaption}\item[{int}]{I\+D\+Utente }\end{DoxyParamCaption})}
+
+Elimina le preferenze associate ad un utente 
+\begin{DoxyParams}{Parametri}
+{\em I\+D\+Utente} & ID dell\textquotesingle{}utente specifico \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utenti_8h_adaf52228f986945a1f51e7ef59616873}\label{_utenti_8h_adaf52228f986945a1f51e7ef59616873}} 
+\index{Utenti.\+h@{Utenti.\+h}!Exists\+One\+Utente@{Exists\+One\+Utente}}
+\index{Exists\+One\+Utente@{Exists\+One\+Utente}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Exists\+One\+Utente()}{ExistsOneUtente()}}
+{\footnotesize\ttfamily bool Exists\+One\+Utente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Controlla se esiste almeno un utente in memoria \begin{DoxyReturn}{Restituisce}
+\textquotesingle{}True\textquotesingle{} se esiste almeno un utente, \textquotesingle{}False\textquotesingle{} altrimenti 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_utenti_8h_aedd7fce7a715da966d911005d70ed21d}\label{_utenti_8h_aedd7fce7a715da966d911005d70ed21d}} 
+\index{Utenti.\+h@{Utenti.\+h}!Get\+Elenco\+Preferenze\+Utente@{Get\+Elenco\+Preferenze\+Utente}}
+\index{Get\+Elenco\+Preferenze\+Utente@{Get\+Elenco\+Preferenze\+Utente}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Get\+Elenco\+Preferenze\+Utente()}{GetElencoPreferenzeUtente()}}
+{\footnotesize\ttfamily int Get\+Elenco\+Preferenze\+Utente (\begin{DoxyParamCaption}\item[{int}]{I\+D\+Utente,  }\item[{\hyperlink{struct_preferenza}{Preferenza}}]{preferenze\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Restituisce l\textquotesingle{}elenco delle preferenze dell\textquotesingle{}utente.
+
+
+\begin{DoxyParams}{Parametri}
+{\em I\+D\+Utente} & ID dell\textquotesingle{}utente specifico \\
+\hline
+{\em preferenze} & Elenco delle preferenze memorizzate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Il numero delle preferenze 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_utenti_8h_aa5af5a35dc1b33a9a23fa1238fdcb87c}\label{_utenti_8h_aa5af5a35dc1b33a9a23fa1238fdcb87c}} 
+\index{Utenti.\+h@{Utenti.\+h}!Get\+Index\+Utente\+From\+Array\+By\+ID@{Get\+Index\+Utente\+From\+Array\+By\+ID}}
+\index{Get\+Index\+Utente\+From\+Array\+By\+ID@{Get\+Index\+Utente\+From\+Array\+By\+ID}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Get\+Index\+Utente\+From\+Array\+By\+I\+D()}{GetIndexUtenteFromArrayByID()}}
+{\footnotesize\ttfamily int Get\+Index\+Utente\+From\+Array\+By\+ID (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})}
+
+Restituisce la posizione in memoria dell\textquotesingle{}utente in base all\textquotesingle{}ID specificato 
+\begin{DoxyParams}{Parametri}
+{\em ID} & ID dell\textquotesingle{}utente da trovare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+La posizione dell\textquotesingle{}utente in memoria, -\/1 se non e\textquotesingle{} stato trovato 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_utenti_8h_a48186cfd5eef09e2a880f84917c21d92}\label{_utenti_8h_a48186cfd5eef09e2a880f84917c21d92}} 
+\index{Utenti.\+h@{Utenti.\+h}!Get\+Prodotti\+Raccomandati@{Get\+Prodotti\+Raccomandati}}
+\index{Get\+Prodotti\+Raccomandati@{Get\+Prodotti\+Raccomandati}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Get\+Prodotti\+Raccomandati()}{GetProdottiRaccomandati()}}
+{\footnotesize\ttfamily void Get\+Prodotti\+Raccomandati (\begin{DoxyParamCaption}\item[{int}]{I\+D\+Utente }\end{DoxyParamCaption})}
+
+Algoritmo che calcola i prodotti raccomandati per un utente. Prima trova gli utenti simili, dopo trova i prodotti non visualizzati dall\textquotesingle{}utente e calcola la stima di preferenza. Dopodiche\textquotesingle{} ordina i prodotti per stima e visualizza i primi N 
+\begin{DoxyParams}{Parametri}
+{\em I\+D\+Utente} & ID dell\textquotesingle{}utente specifico \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utenti_8h_a20c96a5e491025d6cc504f108d7f0ffb}\label{_utenti_8h_a20c96a5e491025d6cc504f108d7f0ffb}} 
+\index{Utenti.\+h@{Utenti.\+h}!Get\+Utente\+Similarita@{Get\+Utente\+Similarita}}
+\index{Get\+Utente\+Similarita@{Get\+Utente\+Similarita}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Get\+Utente\+Similarita()}{GetUtenteSimilarita()}}
+{\footnotesize\ttfamily void Get\+Utente\+Similarita (\begin{DoxyParamCaption}\item[{\hyperlink{struct_preferenza}{Preferenza}}]{preferenze\+Utente\+Principale\mbox{[}$\,$\mbox{]},  }\item[{int}]{n\+Pref\+Utente\+Principale,  }\item[{\hyperlink{struct_utente_similarita}{Utente\+Similarita} $\ast$}]{utente2 }\end{DoxyParamCaption})}
+
+Restituisce la similarità di un utente confrontandolo con l\textquotesingle{}utente principale. L\textquotesingle{}indice utilizzato è quello di Jaccard, corretto in base al tipo di preferenza 
+\begin{DoxyParams}{Parametri}
+{\em preferenze\+Utente\+Principale} & L\textquotesingle{}elenco delle preferenze dell\textquotesingle{}utente principale \\
+\hline
+{\em n\+Pref\+Utente\+Principale} & Il numero di preferenze dell\textquotesingle{}utente principale \\
+\hline
+{\em utente2} & Il dato che salva la similarità del secondo utente \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utenti_8h_a497c2d9a68e29485db20eff4fe2b3359}\label{_utenti_8h_a497c2d9a68e29485db20eff4fe2b3359}} 
+\index{Utenti.\+h@{Utenti.\+h}!Show\+Utente\+For\+Elenco@{Show\+Utente\+For\+Elenco}}
+\index{Show\+Utente\+For\+Elenco@{Show\+Utente\+For\+Elenco}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Show\+Utente\+For\+Elenco()}{ShowUtenteForElenco()}}
+{\footnotesize\ttfamily void Show\+Utente\+For\+Elenco (\begin{DoxyParamCaption}\item[{\hyperlink{struct_utente}{Utente}}]{utente }\end{DoxyParamCaption})}
+
+Mostra i dati principali dell\textquotesingle{}utente in modalita\textquotesingle{} elenco 
+\begin{DoxyParams}{Parametri}
+{\em utente} & Variabile utente \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utenti_8h_aac778e954e8abe06b8e7fbb314c5fabe}\label{_utenti_8h_aac778e954e8abe06b8e7fbb314c5fabe}} 
+\index{Utenti.\+h@{Utenti.\+h}!Utente\+Elenco\+Acquisti@{Utente\+Elenco\+Acquisti}}
+\index{Utente\+Elenco\+Acquisti@{Utente\+Elenco\+Acquisti}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Utente\+Elenco\+Acquisti()}{UtenteElencoAcquisti()}}
+{\footnotesize\ttfamily void Utente\+Elenco\+Acquisti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Viene effettuato un ordinamento degli utenti in base al numero di acquisti. Infine viene mostrato l\textquotesingle{}elenco dei primi N utenti \mbox{\Hypertarget{_utenti_8h_a9df046469041548396f5e1644411ab23}\label{_utenti_8h_a9df046469041548396f5e1644411ab23}} 
+\index{Utenti.\+h@{Utenti.\+h}!Utente\+Elenco\+Nuovi@{Utente\+Elenco\+Nuovi}}
+\index{Utente\+Elenco\+Nuovi@{Utente\+Elenco\+Nuovi}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Utente\+Elenco\+Nuovi()}{UtenteElencoNuovi()}}
+{\footnotesize\ttfamily void Utente\+Elenco\+Nuovi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Viene effettuato un ordinamento degli utenti in base alla data di iscrizione. Infine viene mostrato l\textquotesingle{}elenco dei primi N utenti \mbox{\Hypertarget{_utenti_8h_ad231b8401782f333d57c2397e0090f2d}\label{_utenti_8h_ad231b8401782f333d57c2397e0090f2d}} 
+\index{Utenti.\+h@{Utenti.\+h}!Utente\+Elimina@{Utente\+Elimina}}
+\index{Utente\+Elimina@{Utente\+Elimina}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Utente\+Elimina()}{UtenteElimina()}}
+{\footnotesize\ttfamily void Utente\+Elimina (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\hyperlink{struct_utente}{Utente}}]{utente }\end{DoxyParamCaption})}
+
+Si occupa dell\textquotesingle{}eliminazione definitiva dell\textquotesingle{}utente
+
+
+\begin{DoxyParams}{Parametri}
+{\em utente} & Variabile utente \\
+\hline
+{\em index} & Posizione in memoria dell\textquotesingle{}utente \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utenti_8h_a53bae75046b6859f275c432c56fbd1cb}\label{_utenti_8h_a53bae75046b6859f275c432c56fbd1cb}} 
+\index{Utenti.\+h@{Utenti.\+h}!Utente\+Inserimento@{Utente\+Inserimento}}
+\index{Utente\+Inserimento@{Utente\+Inserimento}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Utente\+Inserimento()}{UtenteInserimento()}}
+{\footnotesize\ttfamily void Utente\+Inserimento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Si occupa dell\textquotesingle{}inserimento di un utente chiedendo in input i dati necessari \mbox{\Hypertarget{_utenti_8h_a5d238784027260cb3e899c79892111c3}\label{_utenti_8h_a5d238784027260cb3e899c79892111c3}} 
+\index{Utenti.\+h@{Utenti.\+h}!Utente\+Modifica@{Utente\+Modifica}}
+\index{Utente\+Modifica@{Utente\+Modifica}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Utente\+Modifica()}{UtenteModifica()}}
+{\footnotesize\ttfamily void Utente\+Modifica (\begin{DoxyParamCaption}\item[{\hyperlink{struct_utente}{Utente} $\ast$}]{utente,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+Si occupa della modifica dell\textquotesingle{}utente 
+\begin{DoxyParams}{Parametri}
+{\em utente} & Variabile puntatore all\textquotesingle{}utente \\
+\hline
+{\em index} & Posizione in memoria dell\textquotesingle{}utente \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utenti_8h_a0a504725211eb5133d2768d2993adff2}\label{_utenti_8h_a0a504725211eb5133d2768d2993adff2}} 
+\index{Utenti.\+h@{Utenti.\+h}!Utente\+Ricerca@{Utente\+Ricerca}}
+\index{Utente\+Ricerca@{Utente\+Ricerca}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Utente\+Ricerca()}{UtenteRicerca()}}
+{\footnotesize\ttfamily void Utente\+Ricerca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Effettua una ricerca degli utenti dato in input un filtro. Restituisce tutti quegli utenti il cui nome/cognome/email2 abbia caratteri comuni col filtro \mbox{\Hypertarget{_utenti_8h_a7d5c60754a997b8e9c99e6ee9d99ead4}\label{_utenti_8h_a7d5c60754a997b8e9c99e6ee9d99ead4}} 
+\index{Utenti.\+h@{Utenti.\+h}!Utente\+Visualizza@{Utente\+Visualizza}}
+\index{Utente\+Visualizza@{Utente\+Visualizza}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Utente\+Visualizza()}{UtenteVisualizza()}}
+{\footnotesize\ttfamily void Utente\+Visualizza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visualizza i dati di un utente, dopodiche\textquotesingle{} e\textquotesingle{} possibile eliminarlo, modificarlo, o vedere i prodotti raccomandati \mbox{\Hypertarget{_utenti_8h_a2cc61e10dc8b1d3fdd514fefb3f2e275}\label{_utenti_8h_a2cc61e10dc8b1d3fdd514fefb3f2e275}} 
+\index{Utenti.\+h@{Utenti.\+h}!Utente\+Visualizza\+Intro@{Utente\+Visualizza\+Intro}}
+\index{Utente\+Visualizza\+Intro@{Utente\+Visualizza\+Intro}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Utente\+Visualizza\+Intro()}{UtenteVisualizzaIntro()}}
+{\footnotesize\ttfamily void Utente\+Visualizza\+Intro (\begin{DoxyParamCaption}\item[{\hyperlink{struct_utente}{Utente}}]{utente }\end{DoxyParamCaption})}
+
+Visualizza a video i dati dell\textquotesingle{}utente 
+\begin{DoxyParams}{Parametri}
+{\em utente} & Variabile utente \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utenti_8h_a5759f53311f5fcffad716b1bff0baa7d}\label{_utenti_8h_a5759f53311f5fcffad716b1bff0baa7d}} 
+\index{Utenti.\+h@{Utenti.\+h}!Utente\+Visualizza\+Preferenze@{Utente\+Visualizza\+Preferenze}}
+\index{Utente\+Visualizza\+Preferenze@{Utente\+Visualizza\+Preferenze}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Utente\+Visualizza\+Preferenze()}{UtenteVisualizzaPreferenze()}}
+{\footnotesize\ttfamily void Utente\+Visualizza\+Preferenze (\begin{DoxyParamCaption}\item[{int}]{I\+D\+Utente }\end{DoxyParamCaption})}
+
+Dato un ID utente, mostra a video le preferenze associate ad esso, ossia il nome del prodotto e la tipologia di preferenza 
+\begin{DoxyParams}{Parametri}
+{\em I\+D\+Utente} & ID dell\textquotesingle{}utente da considerare \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentazione delle variabili}
+\mbox{\Hypertarget{_utenti_8h_a8415943f1e30d1dd5d04cf27b405c02e}\label{_utenti_8h_a8415943f1e30d1dd5d04cf27b405c02e}} 
+\index{Utenti.\+h@{Utenti.\+h}!Last\+I\+D\+Utente@{Last\+I\+D\+Utente}}
+\index{Last\+I\+D\+Utente@{Last\+I\+D\+Utente}!Utenti.\+h@{Utenti.\+h}}
+\subsubsection{\texorpdfstring{Last\+I\+D\+Utente}{LastIDUtente}}
+{\footnotesize\ttfamily int Last\+I\+D\+Utente}
+
+Memorizza l\textquotesingle{}ID dell\textquotesingle{}ultimo utente in memoria, ossia il piu\textquotesingle{} grande 

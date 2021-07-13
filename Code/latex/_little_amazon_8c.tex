@@ -1,0 +1,123 @@
+\hypertarget{_little_amazon_8c}{}\section{Riferimenti per il file src/\+Little\+Amazon.c}
+\label{_little_amazon_8c}\index{src/\+Little\+Amazon.\+c@{src/\+Little\+Amazon.\+c}}
+{\ttfamily \#include \char`\"{}Utility.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Categorie.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Prodotti.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Utenti.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Preferenze.\+h\char`\"{}}\newline
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_little_amazon_8c_a37f510046a3acb4a0b6759f78ad94dc8}{Caricamento\+Utenti} ()
+\item 
+bool \hyperlink{_little_amazon_8c_a8ccee75a309f9b46c8d3d027078b5341}{Caricamento\+Prodotti} ()
+\item 
+bool \hyperlink{_little_amazon_8c_a5cfa5cec8f61fafeb7defc4398b59881}{Caricamento\+Categorie} ()
+\item 
+bool \hyperlink{_little_amazon_8c_a0a6bbed0e241cd9f23e7727104f25b1c}{Caricamento\+Preferenze} ()
+\item 
+void \hyperlink{_little_amazon_8c_a8c6899883c88d79a40af6404bb0e7220}{Gestione\+Prodotti} ()
+\item 
+void \hyperlink{_little_amazon_8c_abd7ffdd5b433840465bc5a736aa9d305}{Gestione\+Categorie} ()
+\item 
+void \hyperlink{_little_amazon_8c_ad3f3418c393bdfc93c25cdd404fadc12}{Gestione\+Utenti} ()
+\item 
+void \hyperlink{_little_amazon_8c_acf78d6915f38dad021707c4b9d58a3ad}{Dispose\+Categorie} ()
+\item 
+void \hyperlink{_little_amazon_8c_ab0019865d9dcb33a35b46cf18d8f53b6}{Dispose\+Prodotti} ()
+\item 
+void \hyperlink{_little_amazon_8c_a25f8acb791e276429c588de402ba2853}{Dispose\+Utenti} ()
+\item 
+void \hyperlink{_little_amazon_8c_a7577808eeacc4f7fc55213c4fa626e65}{Dispose\+Preferenze} ()
+\item 
+\mbox{\Hypertarget{_little_amazon_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_little_amazon_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+File principale dal quale vengono richiamate tutte le altre funzioni. In questo file vengono inizializzati i file, richiamate le funzione del menu\textquotesingle{} e infine al termine del programma vengono effettuate delle operazioni sui file che memorizzano i dati. \begin{DoxyAuthor}{Autori}
+Amedeo Racanati 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_little_amazon_8c_a5cfa5cec8f61fafeb7defc4398b59881}\label{_little_amazon_8c_a5cfa5cec8f61fafeb7defc4398b59881}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Caricamento\+Categorie@{Caricamento\+Categorie}}
+\index{Caricamento\+Categorie@{Caricamento\+Categorie}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Caricamento\+Categorie()}{CaricamentoCategorie()}}
+{\footnotesize\ttfamily bool Caricamento\+Categorie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Carica le categorie dal file in memoria. \begin{DoxyReturn}{Restituisce}
+\textquotesingle{}True\textquotesingle{} se non va a buon fine, \textquotesingle{}False\textquotesingle{} se va a buon fine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_little_amazon_8c_a0a6bbed0e241cd9f23e7727104f25b1c}\label{_little_amazon_8c_a0a6bbed0e241cd9f23e7727104f25b1c}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Caricamento\+Preferenze@{Caricamento\+Preferenze}}
+\index{Caricamento\+Preferenze@{Caricamento\+Preferenze}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Caricamento\+Preferenze()}{CaricamentoPreferenze()}}
+{\footnotesize\ttfamily bool Caricamento\+Preferenze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Carica le preferenze dal file in memoria. \begin{DoxyReturn}{Restituisce}
+\textquotesingle{}True\textquotesingle{} se non va a buon fine, \textquotesingle{}False\textquotesingle{} se va a buon fine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_little_amazon_8c_a8ccee75a309f9b46c8d3d027078b5341}\label{_little_amazon_8c_a8ccee75a309f9b46c8d3d027078b5341}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Caricamento\+Prodotti@{Caricamento\+Prodotti}}
+\index{Caricamento\+Prodotti@{Caricamento\+Prodotti}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Caricamento\+Prodotti()}{CaricamentoProdotti()}}
+{\footnotesize\ttfamily bool Caricamento\+Prodotti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Carica i prodotti dal file in memoria. \begin{DoxyReturn}{Restituisce}
+\textquotesingle{}True\textquotesingle{} se non va a buon fine, \textquotesingle{}False\textquotesingle{} se va a buon fine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_little_amazon_8c_a37f510046a3acb4a0b6759f78ad94dc8}\label{_little_amazon_8c_a37f510046a3acb4a0b6759f78ad94dc8}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Caricamento\+Utenti@{Caricamento\+Utenti}}
+\index{Caricamento\+Utenti@{Caricamento\+Utenti}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Caricamento\+Utenti()}{CaricamentoUtenti()}}
+{\footnotesize\ttfamily bool Caricamento\+Utenti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Carica gli utenti dal file in memoria. \begin{DoxyReturn}{Restituisce}
+\textquotesingle{}True\textquotesingle{} se non va a buon fine, \textquotesingle{}False\textquotesingle{} se va a buon fine 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_little_amazon_8c_acf78d6915f38dad021707c4b9d58a3ad}\label{_little_amazon_8c_acf78d6915f38dad021707c4b9d58a3ad}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Dispose\+Categorie@{Dispose\+Categorie}}
+\index{Dispose\+Categorie@{Dispose\+Categorie}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Dispose\+Categorie()}{DisposeCategorie()}}
+{\footnotesize\ttfamily void Dispose\+Categorie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ordina le categorie per nome e le salva nel file, dopodiche\textquotesingle{} annulla il puntatore al file \mbox{\Hypertarget{_little_amazon_8c_a7577808eeacc4f7fc55213c4fa626e65}\label{_little_amazon_8c_a7577808eeacc4f7fc55213c4fa626e65}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Dispose\+Preferenze@{Dispose\+Preferenze}}
+\index{Dispose\+Preferenze@{Dispose\+Preferenze}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Dispose\+Preferenze()}{DisposePreferenze()}}
+{\footnotesize\ttfamily void Dispose\+Preferenze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Se ci sono state modifiche, aggiorna il file delle preferenze, dopodiche\textquotesingle{} annulla il puntatore al file \mbox{\Hypertarget{_little_amazon_8c_ab0019865d9dcb33a35b46cf18d8f53b6}\label{_little_amazon_8c_ab0019865d9dcb33a35b46cf18d8f53b6}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Dispose\+Prodotti@{Dispose\+Prodotti}}
+\index{Dispose\+Prodotti@{Dispose\+Prodotti}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Dispose\+Prodotti()}{DisposeProdotti()}}
+{\footnotesize\ttfamily void Dispose\+Prodotti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ordina i prodotti e li salva nel file, dopodiche\textquotesingle{} annulla il puntatore al file \mbox{\Hypertarget{_little_amazon_8c_a25f8acb791e276429c588de402ba2853}\label{_little_amazon_8c_a25f8acb791e276429c588de402ba2853}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Dispose\+Utenti@{Dispose\+Utenti}}
+\index{Dispose\+Utenti@{Dispose\+Utenti}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Dispose\+Utenti()}{DisposeUtenti()}}
+{\footnotesize\ttfamily void Dispose\+Utenti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ordina gli utenti e li salva nel file, dopodiche\textquotesingle{} annulla il puntatore al file \mbox{\Hypertarget{_little_amazon_8c_abd7ffdd5b433840465bc5a736aa9d305}\label{_little_amazon_8c_abd7ffdd5b433840465bc5a736aa9d305}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Gestione\+Categorie@{Gestione\+Categorie}}
+\index{Gestione\+Categorie@{Gestione\+Categorie}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Gestione\+Categorie()}{GestioneCategorie()}}
+{\footnotesize\ttfamily void Gestione\+Categorie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Carica le voci di menu\textquotesingle{} inerenti alle categorie \mbox{\Hypertarget{_little_amazon_8c_a8c6899883c88d79a40af6404bb0e7220}\label{_little_amazon_8c_a8c6899883c88d79a40af6404bb0e7220}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Gestione\+Prodotti@{Gestione\+Prodotti}}
+\index{Gestione\+Prodotti@{Gestione\+Prodotti}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Gestione\+Prodotti()}{GestioneProdotti()}}
+{\footnotesize\ttfamily void Gestione\+Prodotti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Carica le voci di menu\textquotesingle{} inerenti ai prodotti \mbox{\Hypertarget{_little_amazon_8c_ad3f3418c393bdfc93c25cdd404fadc12}\label{_little_amazon_8c_ad3f3418c393bdfc93c25cdd404fadc12}} 
+\index{Little\+Amazon.\+c@{Little\+Amazon.\+c}!Gestione\+Utenti@{Gestione\+Utenti}}
+\index{Gestione\+Utenti@{Gestione\+Utenti}!Little\+Amazon.\+c@{Little\+Amazon.\+c}}
+\subsubsection{\texorpdfstring{Gestione\+Utenti()}{GestioneUtenti()}}
+{\footnotesize\ttfamily void Gestione\+Utenti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Carica le voci di menu\textquotesingle{} inerenti agli utenti 

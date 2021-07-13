@@ -1,0 +1,199 @@
+\hypertarget{_utility_8c}{}\section{Riferimenti per il file src/\+Utility.c}
+\label{_utility_8c}\index{src/\+Utility.\+c@{src/\+Utility.\+c}}
+{\ttfamily \#include \char`\"{}Utility.\+h\char`\"{}}\newline
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_utility_8c_a0e1a3a9c4ffdf049f3e78ecfd12b7026}{Gestisci\+Menu} (\hyperlink{struct_m_e_n_u}{M\+E\+NU} menu\mbox{[}$\,$\mbox{]}, int Numero\+Elementi)
+\item 
+void \hyperlink{_utility_8c_aa7d42b816af66303171116657d399323}{Set\+Color} (int ForgC)
+\item 
+void \hyperlink{_utility_8c_afc9773a2816494032a406ef5ec192c26}{Copy\+Array} (char arr\+To\mbox{[}$\,$\mbox{]}, char arr\+From\mbox{[}$\,$\mbox{]}, int length)
+\item 
+void \hyperlink{_utility_8c_abdca621b224f75e8cadfe27dad09e4e4}{Get\+String\+From\+Input} (char str\mbox{[}$\,$\mbox{]}, int length)
+\item 
+void \hyperlink{_utility_8c_a4e584eada21c00c890831a8984b984b9}{Get\+String\+From\+Input\+Exact} (char str\mbox{[}$\,$\mbox{]}, int length, bool also\+Nullable)
+\item 
+float \hyperlink{_utility_8c_a29520bbac681439453b8787a93e3f3c6}{Get\+Float\+From\+Input} (bool strettamente\+Positivo)
+\item 
+int \hyperlink{_utility_8c_ac7b9001dfbcbd56f8edf3e9c698580ad}{Get\+Integer\+From\+Input} (int min, int max)
+\item 
+void \hyperlink{_utility_8c_a0bbd83136b36702ca90a16703a0f59cc}{Get\+Data\+From\+Input} (\hyperlink{struct_data}{Data} $\ast$data\+Ptr)
+\item 
+bool \hyperlink{_utility_8c_a43c78f2791eef6613c3f387d47a6aa32}{Is\+First\+Data\+Bigger} (\hyperlink{struct_data}{Data} data1, \hyperlink{struct_data}{Data} data2)
+\item 
+char $\ast$ \hyperlink{_utility_8c_a451071aa4038839e05fcb18ee8df9ffb}{Get\+Lower\+String} (char str\mbox{[}$\,$\mbox{]}, const int length)
+\item 
+void \hyperlink{_utility_8c_a8c9da674e7be62eb263f6c6e8a82fd5e}{Ordina\+Array\+Preferenze} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+\begin{DoxyAuthor}{Autori}
+Amedeo Racanati 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_utility_8c_afc9773a2816494032a406ef5ec192c26}\label{_utility_8c_afc9773a2816494032a406ef5ec192c26}} 
+\index{Utility.\+c@{Utility.\+c}!Copy\+Array@{Copy\+Array}}
+\index{Copy\+Array@{Copy\+Array}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Copy\+Array()}{CopyArray()}}
+{\footnotesize\ttfamily void Copy\+Array (\begin{DoxyParamCaption}\item[{char}]{arr\+To\mbox{[}$\,$\mbox{]},  }\item[{char}]{arr\+From\mbox{[}$\,$\mbox{]},  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+Copia in un array il contenuto dell\textquotesingle{}altro array.
+
+
+\begin{DoxyParams}{Parametri}
+{\em arr\+To} & Array dove vengono scritti i valori \\
+\hline
+{\em arr\+From} & Array da dove vengono letti i valori \\
+\hline
+{\em length} & Elementi da copiare \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utility_8c_a0e1a3a9c4ffdf049f3e78ecfd12b7026}\label{_utility_8c_a0e1a3a9c4ffdf049f3e78ecfd12b7026}} 
+\index{Utility.\+c@{Utility.\+c}!Gestisci\+Menu@{Gestisci\+Menu}}
+\index{Gestisci\+Menu@{Gestisci\+Menu}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Gestisci\+Menu()}{GestisciMenu()}}
+{\footnotesize\ttfamily void Gestisci\+Menu (\begin{DoxyParamCaption}\item[{\hyperlink{struct_m_e_n_u}{M\+E\+NU}}]{menu\mbox{[}$\,$\mbox{]},  }\item[{int}]{Numero\+Elementi }\end{DoxyParamCaption})}
+
+Gestisce la selezione di una voce di menu\textquotesingle{} 
+\begin{DoxyParams}{Parametri}
+{\em menu} & Elenco delle voci di menu\textquotesingle{} \\
+\hline
+{\em Numero\+Elementi} & Numero delle voci di menu\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utility_8c_a0bbd83136b36702ca90a16703a0f59cc}\label{_utility_8c_a0bbd83136b36702ca90a16703a0f59cc}} 
+\index{Utility.\+c@{Utility.\+c}!Get\+Data\+From\+Input@{Get\+Data\+From\+Input}}
+\index{Get\+Data\+From\+Input@{Get\+Data\+From\+Input}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Get\+Data\+From\+Input()}{GetDataFromInput()}}
+{\footnotesize\ttfamily void Get\+Data\+From\+Input (\begin{DoxyParamCaption}\item[{\hyperlink{struct_data}{Data} $\ast$}]{data\+Ptr }\end{DoxyParamCaption})}
+
+Interroga l\textquotesingle{}utente per l\textquotesingle{}inserimento della data (Giorno/\+Mese/\+Anno) 
+\begin{DoxyParams}{Parametri}
+{\em data\+Ptr} & Puntatore al quale verranno associati i valori \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utility_8c_a29520bbac681439453b8787a93e3f3c6}\label{_utility_8c_a29520bbac681439453b8787a93e3f3c6}} 
+\index{Utility.\+c@{Utility.\+c}!Get\+Float\+From\+Input@{Get\+Float\+From\+Input}}
+\index{Get\+Float\+From\+Input@{Get\+Float\+From\+Input}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Get\+Float\+From\+Input()}{GetFloatFromInput()}}
+{\footnotesize\ttfamily float Get\+Float\+From\+Input (\begin{DoxyParamCaption}\item[{bool}]{strettamente\+Positivo }\end{DoxyParamCaption})}
+
+Restituisce un numero di tipo float inserito dalla console.
+
+
+\begin{DoxyParams}{Parametri}
+{\em strettamente\+Positivo} & Indica se il valore deve essere strettamente maggiore di zero. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Il numero di tipo float arrotondato a due cifre decimali. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_utility_8c_ac7b9001dfbcbd56f8edf3e9c698580ad}\label{_utility_8c_ac7b9001dfbcbd56f8edf3e9c698580ad}} 
+\index{Utility.\+c@{Utility.\+c}!Get\+Integer\+From\+Input@{Get\+Integer\+From\+Input}}
+\index{Get\+Integer\+From\+Input@{Get\+Integer\+From\+Input}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Get\+Integer\+From\+Input()}{GetIntegerFromInput()}}
+{\footnotesize\ttfamily int Get\+Integer\+From\+Input (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})}
+
+Restituisce un numero di tipo intero inserito dalla console, rientrante in un range specificato.
+
+
+\begin{DoxyParams}{Parametri}
+{\em min} & Valore minimo del risultato. \\
+\hline
+{\em max} & Valore massimo del risultato. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Il numero di tipo integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_utility_8c_a451071aa4038839e05fcb18ee8df9ffb}\label{_utility_8c_a451071aa4038839e05fcb18ee8df9ffb}} 
+\index{Utility.\+c@{Utility.\+c}!Get\+Lower\+String@{Get\+Lower\+String}}
+\index{Get\+Lower\+String@{Get\+Lower\+String}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Get\+Lower\+String()}{GetLowerString()}}
+{\footnotesize\ttfamily char$\ast$ Get\+Lower\+String (\begin{DoxyParamCaption}\item[{char}]{str\mbox{[}$\,$\mbox{]},  }\item[{const int}]{length }\end{DoxyParamCaption})}
+
+Restituisce un puntatore ad una stringa contenente caratteri tutti lower-\/case, partendo dalla stringa \textquotesingle{}str\textquotesingle{}
+
+
+\begin{DoxyParams}{Parametri}
+{\em str} & Stringa da considerare \\
+\hline
+{\em length} & Lunghezza della stringa \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Stringa contenente caratteri tutti lower-\/case 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_utility_8c_abdca621b224f75e8cadfe27dad09e4e4}\label{_utility_8c_abdca621b224f75e8cadfe27dad09e4e4}} 
+\index{Utility.\+c@{Utility.\+c}!Get\+String\+From\+Input@{Get\+String\+From\+Input}}
+\index{Get\+String\+From\+Input@{Get\+String\+From\+Input}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Get\+String\+From\+Input()}{GetStringFromInput()}}
+{\footnotesize\ttfamily void Get\+String\+From\+Input (\begin{DoxyParamCaption}\item[{char}]{str\mbox{[}$\,$\mbox{]},  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+Assegna alla variabile str una stringa di una lunghezza massima equivalente al parametro \textquotesingle{}length\textquotesingle{} inserita dalla console, la stringa restituita può contenere spazi e deve essere lunga almeno un carattere.
+
+
+\begin{DoxyParams}{Parametri}
+{\em str} & Stringa di memorizzazione \\
+\hline
+{\em length} & Lunghezza dei caratteri da leggere \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utility_8c_a4e584eada21c00c890831a8984b984b9}\label{_utility_8c_a4e584eada21c00c890831a8984b984b9}} 
+\index{Utility.\+c@{Utility.\+c}!Get\+String\+From\+Input\+Exact@{Get\+String\+From\+Input\+Exact}}
+\index{Get\+String\+From\+Input\+Exact@{Get\+String\+From\+Input\+Exact}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Get\+String\+From\+Input\+Exact()}{GetStringFromInputExact()}}
+{\footnotesize\ttfamily void Get\+String\+From\+Input\+Exact (\begin{DoxyParamCaption}\item[{char}]{str\mbox{[}$\,$\mbox{]},  }\item[{int}]{length,  }\item[{bool}]{also\+Nullable }\end{DoxyParamCaption})}
+
+Assegna alla variabile str una stringa di una lunghezza esattamente pari al parametro \textquotesingle{}length\textquotesingle{} inserita dalla console, la stringa restituita può contenere spazi e puo\textquotesingle{} essere vuota se il parametro \textquotesingle{}also\+Nullable\textquotesingle{} e\textquotesingle{} impostato a true
+
+
+\begin{DoxyParams}{Parametri}
+{\em str} & Stringa di memorizzazione \\
+\hline
+{\em length} & Lunghezza dei caratteri da leggere \\
+\hline
+{\em also\+Nullable} & Indica se la stringa restituita possa essere anche vuota \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_utility_8c_a43c78f2791eef6613c3f387d47a6aa32}\label{_utility_8c_a43c78f2791eef6613c3f387d47a6aa32}} 
+\index{Utility.\+c@{Utility.\+c}!Is\+First\+Data\+Bigger@{Is\+First\+Data\+Bigger}}
+\index{Is\+First\+Data\+Bigger@{Is\+First\+Data\+Bigger}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Is\+First\+Data\+Bigger()}{IsFirstDataBigger()}}
+{\footnotesize\ttfamily bool Is\+First\+Data\+Bigger (\begin{DoxyParamCaption}\item[{\hyperlink{struct_data}{Data}}]{data1,  }\item[{\hyperlink{struct_data}{Data}}]{data2 }\end{DoxyParamCaption})}
+
+Valuta quale delle due date è la maggiore
+
+
+\begin{DoxyParams}{Parametri}
+{\em data1} & Prima data \\
+\hline
+{\em data2} & Seconda data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+\textquotesingle{}True\textquotesingle{} se la prima data e\textquotesingle{} maggiore della seconda, \textquotesingle{}False\textquotesingle{} altrimenti 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_utility_8c_a8c9da674e7be62eb263f6c6e8a82fd5e}\label{_utility_8c_a8c9da674e7be62eb263f6c6e8a82fd5e}} 
+\index{Utility.\+c@{Utility.\+c}!Ordina\+Array\+Preferenze@{Ordina\+Array\+Preferenze}}
+\index{Ordina\+Array\+Preferenze@{Ordina\+Array\+Preferenze}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Ordina\+Array\+Preferenze()}{OrdinaArrayPreferenze()}}
+{\footnotesize\ttfamily void Ordina\+Array\+Preferenze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Ordina l\textquotesingle{}array delle preferenze per I\+D\+Utente, e poi per I\+D\+Prodotto in maniera ascendente. \mbox{\Hypertarget{_utility_8c_aa7d42b816af66303171116657d399323}\label{_utility_8c_aa7d42b816af66303171116657d399323}} 
+\index{Utility.\+c@{Utility.\+c}!Set\+Color@{Set\+Color}}
+\index{Set\+Color@{Set\+Color}!Utility.\+c@{Utility.\+c}}
+\subsubsection{\texorpdfstring{Set\+Color()}{SetColor()}}
+{\footnotesize\ttfamily void Set\+Color (\begin{DoxyParamCaption}\item[{int}]{ForgC }\end{DoxyParamCaption})}
+
+Imposta un colore ai caratteri stampati sulla console.
+
+
+\begin{DoxyParams}{Parametri}
+{\em ForgC} & Numero indicante il colore da impostare \\
+\hline
+\end{DoxyParams}

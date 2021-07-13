@@ -1,0 +1,98 @@
+\hypertarget{_preferenze_8c}{}\section{Riferimenti per il file src/\+Preferenze.c}
+\label{_preferenze_8c}\index{src/\+Preferenze.\+c@{src/\+Preferenze.\+c}}
+{\ttfamily \#include \char`\"{}Utility.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Prodotti.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Utenti.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Preferenze.\+h\char`\"{}}\newline
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_preferenze_8c_af400150e09b76d7ca27049d54d943e0c}{Gestione\+Preferenze} ()
+\item 
+int \hyperlink{_preferenze_8c_a340aa075f9d2f959b522b53bffdfe957}{Get\+Scelta\+Preferenza} (int numero\+Pezzi, int I\+D\+Utente, int I\+D\+Prodotto)
+\item 
+int \hyperlink{_preferenze_8c_a7af63c16eb6eda0f60300458c9c1e109}{Get\+Acquisti\+Utente} (int I\+D\+Utente)
+\item 
+int \hyperlink{_preferenze_8c_a151a5cbc43ed344259c9282dab6c45cf}{Get\+Vendite\+Prodotto} (int I\+D\+Prodotto)
+\item 
+int \hyperlink{_preferenze_8c_a800d36d717404d142900c26b2e6fbd0f}{Get\+Index\+Preferenze\+From\+Array} (int I\+D\+Utente, int I\+D\+Prodotto)
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+\begin{DoxyAuthor}{Autori}
+Amedeo Racanati 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_preferenze_8c_af400150e09b76d7ca27049d54d943e0c}\label{_preferenze_8c_af400150e09b76d7ca27049d54d943e0c}} 
+\index{Preferenze.\+c@{Preferenze.\+c}!Gestione\+Preferenze@{Gestione\+Preferenze}}
+\index{Gestione\+Preferenze@{Gestione\+Preferenze}!Preferenze.\+c@{Preferenze.\+c}}
+\subsubsection{\texorpdfstring{Gestione\+Preferenze()}{GestionePreferenze()}}
+{\footnotesize\ttfamily void Gestione\+Preferenze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Si occupa di controllare se esistono prodotti e utenti nel sistema, e poi richiede l\textquotesingle{}ID dell\textquotesingle{}utente e del prodotto, in modo tale da poter effettuare una creazione/modifica/eliminazione della preferenza \mbox{\Hypertarget{_preferenze_8c_a7af63c16eb6eda0f60300458c9c1e109}\label{_preferenze_8c_a7af63c16eb6eda0f60300458c9c1e109}} 
+\index{Preferenze.\+c@{Preferenze.\+c}!Get\+Acquisti\+Utente@{Get\+Acquisti\+Utente}}
+\index{Get\+Acquisti\+Utente@{Get\+Acquisti\+Utente}!Preferenze.\+c@{Preferenze.\+c}}
+\subsubsection{\texorpdfstring{Get\+Acquisti\+Utente()}{GetAcquistiUtente()}}
+{\footnotesize\ttfamily int Get\+Acquisti\+Utente (\begin{DoxyParamCaption}\item[{int}]{I\+D\+Utente }\end{DoxyParamCaption})}
+
+Restituisce il numero degli acquisti di un utente 
+\begin{DoxyParams}{Parametri}
+{\em I\+D\+Utente} & ID dell\textquotesingle{}utente specifico \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Numero degli acquisti dell\textquotesingle{}utente 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_preferenze_8c_a800d36d717404d142900c26b2e6fbd0f}\label{_preferenze_8c_a800d36d717404d142900c26b2e6fbd0f}} 
+\index{Preferenze.\+c@{Preferenze.\+c}!Get\+Index\+Preferenze\+From\+Array@{Get\+Index\+Preferenze\+From\+Array}}
+\index{Get\+Index\+Preferenze\+From\+Array@{Get\+Index\+Preferenze\+From\+Array}!Preferenze.\+c@{Preferenze.\+c}}
+\subsubsection{\texorpdfstring{Get\+Index\+Preferenze\+From\+Array()}{GetIndexPreferenzeFromArray()}}
+{\footnotesize\ttfamily int Get\+Index\+Preferenze\+From\+Array (\begin{DoxyParamCaption}\item[{int}]{I\+D\+Utente,  }\item[{int}]{I\+D\+Prodotto }\end{DoxyParamCaption})}
+
+Dato l\textquotesingle{}ID dell\textquotesingle{}utente e del prodotto, controlla se esiste una preferenza associata in memoria 
+\begin{DoxyParams}{Parametri}
+{\em I\+D\+Utente} & ID dell\textquotesingle{}utente specifico \\
+\hline
+{\em I\+D\+Prodotto} & ID del prodotto specifico \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Indice della preferenza associata, -\/1 se non e\textquotesingle{} stata trovata. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_preferenze_8c_a340aa075f9d2f959b522b53bffdfe957}\label{_preferenze_8c_a340aa075f9d2f959b522b53bffdfe957}} 
+\index{Preferenze.\+c@{Preferenze.\+c}!Get\+Scelta\+Preferenza@{Get\+Scelta\+Preferenza}}
+\index{Get\+Scelta\+Preferenza@{Get\+Scelta\+Preferenza}!Preferenze.\+c@{Preferenze.\+c}}
+\subsubsection{\texorpdfstring{Get\+Scelta\+Preferenza()}{GetSceltaPreferenza()}}
+{\footnotesize\ttfamily int Get\+Scelta\+Preferenza (\begin{DoxyParamCaption}\item[{int}]{numero\+Pezzi,  }\item[{int}]{I\+D\+Utente,  }\item[{int}]{I\+D\+Prodotto }\end{DoxyParamCaption})}
+
+Chiede all\textquotesingle{}utente l\textquotesingle{}operazione che vuole effettuare (creazione/modifica/eliminazione della preferenza)
+
+
+\begin{DoxyParams}{Parametri}
+{\em numero\+Pezzi} & Numero dei pezzi in magazzino del prodotto \\
+\hline
+{\em I\+D\+Utente} & ID dell\textquotesingle{}utente \\
+\hline
+{\em I\+D\+Prodotto} & ID del prodotto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Il valore della scelta, se specificato 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_preferenze_8c_a151a5cbc43ed344259c9282dab6c45cf}\label{_preferenze_8c_a151a5cbc43ed344259c9282dab6c45cf}} 
+\index{Preferenze.\+c@{Preferenze.\+c}!Get\+Vendite\+Prodotto@{Get\+Vendite\+Prodotto}}
+\index{Get\+Vendite\+Prodotto@{Get\+Vendite\+Prodotto}!Preferenze.\+c@{Preferenze.\+c}}
+\subsubsection{\texorpdfstring{Get\+Vendite\+Prodotto()}{GetVenditeProdotto()}}
+{\footnotesize\ttfamily int Get\+Vendite\+Prodotto (\begin{DoxyParamCaption}\item[{int}]{I\+D\+Prodotto }\end{DoxyParamCaption})}
+
+Restituisce il numero delle vendite di un prodotto 
+\begin{DoxyParams}{Parametri}
+{\em I\+D\+Prodotto} & ID del prodotto specifico \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+Numero delle vendite di un prodotto 
+\end{DoxyReturn}

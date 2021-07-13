@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LittleAmazon:  File sorgente src/Preferenze.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LittleAmazon
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generato da Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Cerca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Cerca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Preferenze.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_preferenze_8h.html">Vai alla documentazione di questo file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PREFERENZE_H_</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define PREFERENZE_H_</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="_preferenze_8h.html#ada6ed316d9cd08508e9e6b849ca5fd9b">   14</a></span>&#160;<span class="preprocessor">#define FILE_PREFERENZE &quot;Preferenze.txt&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_preferenze_8h.html#ab2e8a4109e95a57a653b40085120d9c2">   19</a></span>&#160;<span class="preprocessor">#define TIPO_PREFERENZA_VISUALIZZATO -1</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="_preferenze_8h.html#abdd9c373875124741647f35f1122b375">   24</a></span>&#160;<span class="preprocessor">#define TIPO_PREFERENZA_LISTA_DESIDERI 0</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_preferenze_8h.html#af400150e09b76d7ca27049d54d943e0c">GestionePreferenze</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_preferenze_8h.html#a340aa075f9d2f959b522b53bffdfe957">GetSceltaPreferenza</a>(<span class="keywordtype">int</span> numeroPezzi, <span class="keywordtype">int</span> IDUtente, <span class="keywordtype">int</span> IDProdotto);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_preferenze_8h.html#a7af63c16eb6eda0f60300458c9c1e109">GetAcquistiUtente</a>(<span class="keywordtype">int</span> IDUtente);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_preferenze_8h.html#a151a5cbc43ed344259c9282dab6c45cf">GetVenditeProdotto</a>(<span class="keywordtype">int</span> IDProdotto);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_preferenze_8h.html#a800d36d717404d142900c26b2e6fbd0f">GetIndexPreferenzeFromArray</a>(<span class="keywordtype">int</span> IDUtente, <span class="keywordtype">int</span> IDProdotto);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* PREFERENZE_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="_preferenze_8h_html_a800d36d717404d142900c26b2e6fbd0f"><div class="ttname"><a href="_preferenze_8h.html#a800d36d717404d142900c26b2e6fbd0f">GetIndexPreferenzeFromArray</a></div><div class="ttdeci">int GetIndexPreferenzeFromArray(int IDUtente, int IDProdotto)</div><div class="ttdef"><b>Definition:</b> Preferenze.c:365</div></div>
+<div class="ttc" id="_preferenze_8h_html_af400150e09b76d7ca27049d54d943e0c"><div class="ttname"><a href="_preferenze_8h.html#af400150e09b76d7ca27049d54d943e0c">GestionePreferenze</a></div><div class="ttdeci">void GestionePreferenze()</div><div class="ttdef"><b>Definition:</b> Preferenze.c:12</div></div>
+<div class="ttc" id="_preferenze_8h_html_a340aa075f9d2f959b522b53bffdfe957"><div class="ttname"><a href="_preferenze_8h.html#a340aa075f9d2f959b522b53bffdfe957">GetSceltaPreferenza</a></div><div class="ttdeci">int GetSceltaPreferenza(int numeroPezzi, int IDUtente, int IDProdotto)</div><div class="ttdef"><b>Definition:</b> Preferenze.c:82</div></div>
+<div class="ttc" id="_preferenze_8h_html_a151a5cbc43ed344259c9282dab6c45cf"><div class="ttname"><a href="_preferenze_8h.html#a151a5cbc43ed344259c9282dab6c45cf">GetVenditeProdotto</a></div><div class="ttdeci">int GetVenditeProdotto(int IDProdotto)</div><div class="ttdef"><b>Definition:</b> Preferenze.c:345</div></div>
+<div class="ttc" id="_preferenze_8h_html_a7af63c16eb6eda0f60300458c9c1e109"><div class="ttname"><a href="_preferenze_8h.html#a7af63c16eb6eda0f60300458c9c1e109">GetAcquistiUtente</a></div><div class="ttdeci">int GetAcquistiUtente(int IDUtente)</div><div class="ttdef"><b>Definition:</b> Preferenze.c:272</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generato da &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

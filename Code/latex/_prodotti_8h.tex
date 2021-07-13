@@ -1,0 +1,186 @@
+\hypertarget{_prodotti_8h}{}\section{Riferimenti per il file src/\+Prodotti.h}
+\label{_prodotti_8h}\index{src/\+Prodotti.\+h@{src/\+Prodotti.\+h}}
+\subsection*{Definizioni}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_prodotti_8h_a6749e6dd066b54d24b99d7319bebdcf6}{F\+I\+L\+E\+\_\+\+P\+R\+O\+D\+O\+T\+TI}~\char`\"{}Prodotti.\+txt\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Funzioni}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_prodotti_8h_a617059d4cf030157fcb5e22fd57d92ad}{Prodotto\+Ricerca} ()
+\item 
+void \hyperlink{_prodotti_8h_aa54661f7ca6cde2604985d059e45dfc7}{Prodotto\+Inserimento} ()
+\item 
+void \hyperlink{_prodotti_8h_a6c014daf393883d0c64849f3510e83e0}{Prodotto\+Visualizza} ()
+\item 
+void \hyperlink{_prodotti_8h_a18399a00f6da0ad9d40d01435151071b}{Prodotto\+Visualizza\+Intro} (\hyperlink{struct_prodotto}{Prodotto} prodotto)
+\item 
+void \hyperlink{_prodotti_8h_ad279ef837d0601cce163d3731f08060c}{Prodotto\+Modifica} (\hyperlink{struct_prodotto}{Prodotto} $\ast$prodotto, int index)
+\item 
+void \hyperlink{_prodotti_8h_ae88a20fb99a387927c23d5627278d755}{Prodotto\+Elimina} (\hyperlink{struct_prodotto}{Prodotto} prodotto, int index)
+\item 
+void \hyperlink{_prodotti_8h_a23f3edf2c3fcb201f3b31d85f5d8a3fd}{Prodotto\+Ricerca\+Ditta} ()
+\item 
+void \hyperlink{_prodotti_8h_a8697de5550b7fd951b54675fc44c72fa}{Prodotto\+Ricerca\+Prezzo} ()
+\item 
+void \hyperlink{_prodotti_8h_a6458de134d0e62720d571baea5bc271e}{Prodotto\+Elenco\+Nuovi} ()
+\item 
+void \hyperlink{_prodotti_8h_a5d26dfccc7eeb4cd10b2b6b08e8c5396}{Prodotto\+Elenco\+Piu\+Venduti} ()
+\item 
+void \hyperlink{_prodotti_8h_a83ae173b2e1b44be7d4098575bc7ba47}{Show\+Prodotto\+For\+Elenco} (\hyperlink{struct_prodotto}{Prodotto} prodotto)
+\item 
+bool \hyperlink{_prodotti_8h_ac5f5aa6ba69adaa132c4b17dd79e689f}{Exists\+One\+Prodotto} ()
+\item 
+int \hyperlink{_prodotti_8h_afa294a7f6163392e64a3bab52f48a62c}{Get\+Index\+Prodotto\+From\+Array\+By\+ID} (int ID)
+\end{DoxyCompactItemize}
+\subsection*{Variabili}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_prodotti_8h_a265bd4dd71f75f82e02ae94911ce37cf}{Last\+I\+D\+Prodotto}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descrizione dettagliata}
+Questa libreria definisce varie funzioni che lavorano sulla tipologia di dato \textquotesingle{}\hyperlink{struct_prodotto}{Prodotto}\textquotesingle{} Sono presenti algoritmi di ricerca, di modifica dei dati e di output dei valori.
+
+\begin{DoxyAuthor}{Autori}
+Amedeo Racanati 
+\end{DoxyAuthor}
+
+
+\subsection{Documentazione delle definizioni}
+\mbox{\Hypertarget{_prodotti_8h_a6749e6dd066b54d24b99d7319bebdcf6}\label{_prodotti_8h_a6749e6dd066b54d24b99d7319bebdcf6}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!F\+I\+L\+E\+\_\+\+P\+R\+O\+D\+O\+T\+TI@{F\+I\+L\+E\+\_\+\+P\+R\+O\+D\+O\+T\+TI}}
+\index{F\+I\+L\+E\+\_\+\+P\+R\+O\+D\+O\+T\+TI@{F\+I\+L\+E\+\_\+\+P\+R\+O\+D\+O\+T\+TI}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{F\+I\+L\+E\+\_\+\+P\+R\+O\+D\+O\+T\+TI}{FILE\_PRODOTTI}}
+{\footnotesize\ttfamily \#define F\+I\+L\+E\+\_\+\+P\+R\+O\+D\+O\+T\+TI~\char`\"{}Prodotti.\+txt\char`\"{}}
+
+Nome del file contenente i dati dei prodotti 
+
+\subsection{Documentazione delle funzioni}
+\mbox{\Hypertarget{_prodotti_8h_ac5f5aa6ba69adaa132c4b17dd79e689f}\label{_prodotti_8h_ac5f5aa6ba69adaa132c4b17dd79e689f}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Exists\+One\+Prodotto@{Exists\+One\+Prodotto}}
+\index{Exists\+One\+Prodotto@{Exists\+One\+Prodotto}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Exists\+One\+Prodotto()}{ExistsOneProdotto()}}
+{\footnotesize\ttfamily bool Exists\+One\+Prodotto (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Controlla se esiste almeno un prodotto in memoria \begin{DoxyReturn}{Restituisce}
+\textquotesingle{}True\textquotesingle{} se esiste almeno un prodotto, \textquotesingle{}False\textquotesingle{} altrimenti 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_prodotti_8h_afa294a7f6163392e64a3bab52f48a62c}\label{_prodotti_8h_afa294a7f6163392e64a3bab52f48a62c}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Get\+Index\+Prodotto\+From\+Array\+By\+ID@{Get\+Index\+Prodotto\+From\+Array\+By\+ID}}
+\index{Get\+Index\+Prodotto\+From\+Array\+By\+ID@{Get\+Index\+Prodotto\+From\+Array\+By\+ID}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Get\+Index\+Prodotto\+From\+Array\+By\+I\+D()}{GetIndexProdottoFromArrayByID()}}
+{\footnotesize\ttfamily int Get\+Index\+Prodotto\+From\+Array\+By\+ID (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})}
+
+Restituisce la posizione in memoria del prodotto in base all\textquotesingle{}ID specificato 
+\begin{DoxyParams}{Parametri}
+{\em ID} & ID del prodotto da trovare \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Restituisce}
+La posizione del prodotto in memoria, -\/1 se non e\textquotesingle{} stato trovato 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_prodotti_8h_a6458de134d0e62720d571baea5bc271e}\label{_prodotti_8h_a6458de134d0e62720d571baea5bc271e}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Prodotto\+Elenco\+Nuovi@{Prodotto\+Elenco\+Nuovi}}
+\index{Prodotto\+Elenco\+Nuovi@{Prodotto\+Elenco\+Nuovi}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Prodotto\+Elenco\+Nuovi()}{ProdottoElencoNuovi()}}
+{\footnotesize\ttfamily void Prodotto\+Elenco\+Nuovi (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Viene effettuato un ordinamento dei prodotti in base alla data di inserimento. Infine viene mostrato l\textquotesingle{}elenco dei primi N prodotti \mbox{\Hypertarget{_prodotti_8h_a5d26dfccc7eeb4cd10b2b6b08e8c5396}\label{_prodotti_8h_a5d26dfccc7eeb4cd10b2b6b08e8c5396}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Prodotto\+Elenco\+Piu\+Venduti@{Prodotto\+Elenco\+Piu\+Venduti}}
+\index{Prodotto\+Elenco\+Piu\+Venduti@{Prodotto\+Elenco\+Piu\+Venduti}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Prodotto\+Elenco\+Piu\+Venduti()}{ProdottoElencoPiuVenduti()}}
+{\footnotesize\ttfamily void Prodotto\+Elenco\+Piu\+Venduti (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Viene effettuato un ordinamento dei prodotti in base ai piu\textquotesingle{} venduti. Infine viene mostrato l\textquotesingle{}elenco dei primi N prodotti \mbox{\Hypertarget{_prodotti_8h_ae88a20fb99a387927c23d5627278d755}\label{_prodotti_8h_ae88a20fb99a387927c23d5627278d755}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Prodotto\+Elimina@{Prodotto\+Elimina}}
+\index{Prodotto\+Elimina@{Prodotto\+Elimina}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Prodotto\+Elimina()}{ProdottoElimina()}}
+{\footnotesize\ttfamily void Prodotto\+Elimina (\begin{DoxyParamCaption}\item[{\hyperlink{struct_prodotto}{Prodotto}}]{prodotto,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+Si occupa dell\textquotesingle{}eliminazione definitiva del prodotto
+
+
+\begin{DoxyParams}{Parametri}
+{\em prodotto} & Variabile prodotto \\
+\hline
+{\em index} & Posizione in memoria del prodotto \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_prodotti_8h_aa54661f7ca6cde2604985d059e45dfc7}\label{_prodotti_8h_aa54661f7ca6cde2604985d059e45dfc7}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Prodotto\+Inserimento@{Prodotto\+Inserimento}}
+\index{Prodotto\+Inserimento@{Prodotto\+Inserimento}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Prodotto\+Inserimento()}{ProdottoInserimento()}}
+{\footnotesize\ttfamily void Prodotto\+Inserimento (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Effettua l\textquotesingle{}inserimento di un prodotto chiedendo in input tutti i dati necessari \mbox{\Hypertarget{_prodotti_8h_ad279ef837d0601cce163d3731f08060c}\label{_prodotti_8h_ad279ef837d0601cce163d3731f08060c}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Prodotto\+Modifica@{Prodotto\+Modifica}}
+\index{Prodotto\+Modifica@{Prodotto\+Modifica}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Prodotto\+Modifica()}{ProdottoModifica()}}
+{\footnotesize\ttfamily void Prodotto\+Modifica (\begin{DoxyParamCaption}\item[{\hyperlink{struct_prodotto}{Prodotto} $\ast$}]{prodotto,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+Si occupa della modifica del prodotto 
+\begin{DoxyParams}{Parametri}
+{\em prodotto} & Variabile puntatore al prodotto \\
+\hline
+{\em index} & Posizione in memoria del prodotto \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_prodotti_8h_a617059d4cf030157fcb5e22fd57d92ad}\label{_prodotti_8h_a617059d4cf030157fcb5e22fd57d92ad}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Prodotto\+Ricerca@{Prodotto\+Ricerca}}
+\index{Prodotto\+Ricerca@{Prodotto\+Ricerca}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Prodotto\+Ricerca()}{ProdottoRicerca()}}
+{\footnotesize\ttfamily void Prodotto\+Ricerca (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Effettua una ricerca dei prodotti dato in input un filtro. Restituisce tutti quei prodotti il cui nome/categoria/descrizione/ditta abbia caratteri comuni col filtro \mbox{\Hypertarget{_prodotti_8h_a23f3edf2c3fcb201f3b31d85f5d8a3fd}\label{_prodotti_8h_a23f3edf2c3fcb201f3b31d85f5d8a3fd}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Prodotto\+Ricerca\+Ditta@{Prodotto\+Ricerca\+Ditta}}
+\index{Prodotto\+Ricerca\+Ditta@{Prodotto\+Ricerca\+Ditta}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Prodotto\+Ricerca\+Ditta()}{ProdottoRicercaDitta()}}
+{\footnotesize\ttfamily void Prodotto\+Ricerca\+Ditta (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Effettua una ricerca dei prodotti in base alla ditta e li mostra a video \mbox{\Hypertarget{_prodotti_8h_a8697de5550b7fd951b54675fc44c72fa}\label{_prodotti_8h_a8697de5550b7fd951b54675fc44c72fa}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Prodotto\+Ricerca\+Prezzo@{Prodotto\+Ricerca\+Prezzo}}
+\index{Prodotto\+Ricerca\+Prezzo@{Prodotto\+Ricerca\+Prezzo}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Prodotto\+Ricerca\+Prezzo()}{ProdottoRicercaPrezzo()}}
+{\footnotesize\ttfamily void Prodotto\+Ricerca\+Prezzo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Viene effettuata una ricerca dei prodotti per fascia prezzo. Viene mostrato l\textquotesingle{}elenco dei prodotti che rientrano in una fascia minimo-\/massimo \mbox{\Hypertarget{_prodotti_8h_a6c014daf393883d0c64849f3510e83e0}\label{_prodotti_8h_a6c014daf393883d0c64849f3510e83e0}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Prodotto\+Visualizza@{Prodotto\+Visualizza}}
+\index{Prodotto\+Visualizza@{Prodotto\+Visualizza}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Prodotto\+Visualizza()}{ProdottoVisualizza()}}
+{\footnotesize\ttfamily void Prodotto\+Visualizza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Visualizza i dati di un prodotto, dopodiche\textquotesingle{} e\textquotesingle{} possibile eliminarlo o modificarlo \mbox{\Hypertarget{_prodotti_8h_a18399a00f6da0ad9d40d01435151071b}\label{_prodotti_8h_a18399a00f6da0ad9d40d01435151071b}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Prodotto\+Visualizza\+Intro@{Prodotto\+Visualizza\+Intro}}
+\index{Prodotto\+Visualizza\+Intro@{Prodotto\+Visualizza\+Intro}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Prodotto\+Visualizza\+Intro()}{ProdottoVisualizzaIntro()}}
+{\footnotesize\ttfamily void Prodotto\+Visualizza\+Intro (\begin{DoxyParamCaption}\item[{\hyperlink{struct_prodotto}{Prodotto}}]{prodotto }\end{DoxyParamCaption})}
+
+Visualizza a video i dati del prodotto 
+\begin{DoxyParams}{Parametri}
+{\em prodotto} & Variabile prodotto \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_prodotti_8h_a83ae173b2e1b44be7d4098575bc7ba47}\label{_prodotti_8h_a83ae173b2e1b44be7d4098575bc7ba47}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Show\+Prodotto\+For\+Elenco@{Show\+Prodotto\+For\+Elenco}}
+\index{Show\+Prodotto\+For\+Elenco@{Show\+Prodotto\+For\+Elenco}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Show\+Prodotto\+For\+Elenco()}{ShowProdottoForElenco()}}
+{\footnotesize\ttfamily void Show\+Prodotto\+For\+Elenco (\begin{DoxyParamCaption}\item[{\hyperlink{struct_prodotto}{Prodotto}}]{prodotto }\end{DoxyParamCaption})}
+
+Mostra i dati principali del prodotto in modalita\textquotesingle{} elenco 
+\begin{DoxyParams}{Parametri}
+{\em prodotto} & Variabile prodotto \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentazione delle variabili}
+\mbox{\Hypertarget{_prodotti_8h_a265bd4dd71f75f82e02ae94911ce37cf}\label{_prodotti_8h_a265bd4dd71f75f82e02ae94911ce37cf}} 
+\index{Prodotti.\+h@{Prodotti.\+h}!Last\+I\+D\+Prodotto@{Last\+I\+D\+Prodotto}}
+\index{Last\+I\+D\+Prodotto@{Last\+I\+D\+Prodotto}!Prodotti.\+h@{Prodotti.\+h}}
+\subsubsection{\texorpdfstring{Last\+I\+D\+Prodotto}{LastIDProdotto}}
+{\footnotesize\ttfamily int Last\+I\+D\+Prodotto}
+
+Memorizza l\textquotesingle{}ID dell\textquotesingle{}ultimo prodotto in memoria, ossia il piu\textquotesingle{} grande 
